@@ -37,11 +37,28 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'debug', '>= 1.0.0', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 5.0.0'
+  gem 'reek' # https://github.com/troessner/reek (Linter)
+  gem 'rubocop', '~> 0.9', require: false # https://github.com/rubocop-hq/rubocop (Linter)
+  gem 'rubocop-performance', require: false # https://github.com/rubocop/rubocop-performance
+  gem 'rubocop-rails' # https://github.com/rubocop-hq/rubocop-rails (Linter)
+  gem 'rubocop-rspec' # https://github.com/rubocop-hq/rubocop-rspec (Linter)
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  gem 'capybara' # https://github.com/teamcapybara/capybara
+  gem 'cuprite' # https://github.com/rubycdp/cuprite
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec_junit_formatter'
+  gem 'rspec-rails', '~> 5.0.0'
+  gem 'simplecov', require: false
+  gem 'vcr', require: false # https://github.com/vcr/vcr
+  gem 'webmock', require: false
 end

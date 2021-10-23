@@ -23,7 +23,7 @@ jobs:
       - ruby/install-deps
       - run:
           name: Compile Assets
-          command: COVERGE=0 bundle exec rails assets:precompile
+          command: COVERGE=0 bundle exec rails
       - ruby/rspec-test
 workflows:
   version: 2

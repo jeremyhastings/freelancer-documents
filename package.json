@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@prettier/plugin-ruby": "^2.0.0-rc4",
-    "prettier": "^2.4.1"
+    "@prettier/plugin-ruby": "2.0.0-rc4",
+    "prettier": "2.4.1"
   }
 }

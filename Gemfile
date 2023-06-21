@@ -40,7 +40,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'debug', '>= 1.0.0', platforms: %i[mri mingw x64_mingw]
   gem 'reek' # https://github.com/troessner/reek (Linter)
-  gem 'rubocop', '~> 0.9', require: false # https://github.com/rubocop-hq/rubocop (Linter)
+  gem 'rubocop', '~> 1.0', require: false # https://github.com/rubocop-hq/rubocop (Linter)
   gem 'rubocop-performance', require: false # https://github.com/rubocop/rubocop-performance
   gem 'rubocop-rails' # https://github.com/rubocop-hq/rubocop-rails (Linter)
   gem 'rubocop-rspec' # https://github.com/rubocop-hq/rubocop-rspec (Linter)

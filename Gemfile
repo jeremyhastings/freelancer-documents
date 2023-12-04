@@ -57,7 +57,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails', '~> 5.0.0'
+  gem 'rspec-rails', '~> 6.1.0'
   gem 'simplecov', require: false
   gem 'vcr', require: false # https://github.com/vcr/vcr
   gem 'webmock', require: false
